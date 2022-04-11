@@ -1,0 +1,99 @@
+
+
+ empleados = [
+    {
+        id=0,
+        nombre='Jose',
+        apellido = 'Zuniga'
+    },
+    {
+        id=1,
+        nombre='Jose',
+        apellido = 'Zuniga'
+    },
+    {
+        id=2,
+        nombre='Jose',
+        apellido = 'Zuniga'
+    },
+    {
+        id=3,
+        nombre='Jose',
+        apellido = 'Zuniga'
+    }
+
+ ];
+
+ ordenes = [
+     {
+         id = 0, 
+         tipoOrden='ordinaria' , 'compleja'
+         fecha =Date('dd-mm');
+    },
+    ......
+    {
+        id = n,
+        tipoOrden= ,
+        fecha = Date(); 
+    }
+ ]
+
+  cargaPorDia = [
+     {
+         cargaTotal = 10,
+         id = 0,
+         fecha= Date('dd-mm'),
+         empleados = 0,
+    }, ... 
+    {
+        cargaTotal = 10,
+        id = n,
+        fecha= Date('dd-mm') 
+        empleados = 0,
+    }
+ ]
+
+
+ resultante = [
+     {
+         fecha = Date(dd-mm),
+         cargaDia = 10,
+         id = 0
+     }
+ ]
+
+
+------------------------- algoritmo ---------------------
+
+para cada fecha desde la mas baja hasta la mas alta en el arreglo de cargasNuevas{
+
+    L = carga del dia
+    y = fecha del dia; 
+
+    while(L !=0 ){
+        if (resultante(fecha == y) existe){
+
+        }else{
+            resultante add ({
+                fecha = y,
+                carga = 0
+            })
+        }
+
+        if(resultante[fecha==y].carga <28){
+            let cargaP = L +resultante[fecha==y]
+            if(cargaP>28){
+                L = cargaP-28
+                resultante[fecha==y].carga = 28.
+            }else{
+                L=0;
+                resultante[fecha ==y].carga = cargaP.
+            }
+            y = y+1;
+        }else{
+            y = y +1;
+        }
+    }
+    
+
+}
